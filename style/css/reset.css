@@ -1,0 +1,28 @@
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+svg, canvas, video, picture, img {
+  display: block;
+  max-width: 100%;
+}
+
+select, textarea, button, input {
+  font: inherit;
+}
+
+h6, h5, h4, h3, h2, h1, p {
+  overflow-wrap: break-word;
+}
+
+#__next, #root {
+  isolation: isolate;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=reset.css.map */

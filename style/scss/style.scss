@@ -1,0 +1,28 @@
+$primary-color:#F4D04E;
+$gray-950:#111111;
+$gray-500:#6B6B6B;
+
+body {
+    background-color: $primary-color;
+}
+
+main {
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 0.06rem;
+    border-radius: 1.25rem;
+    box-shadow: 0.5rem 0.5rem $gray-950;
+    width: 24rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1.5rem;
+
+    .imgContainer {
+        border-radius: 0.6rem;
+        height: 12.5rem;
+        background-image: url(../../assets/images/illustration-article.svg);
+        width: 100%;
+    }
+}

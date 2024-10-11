@@ -1,0 +1,55 @@
+%border_box {
+    box-sizing: border-box;
+}
+
+%media_share {
+    display: block;
+    max-width: 100%;
+}
+
+%input_share {
+    font: inherit;
+}
+
+%text_wrap {
+    overflow-wrap: break-word;
+}
+
+%isolate {
+    isolation: isolate;
+}
+
+* {
+    margin: 0;
+
+    &:before{@extend %border_box;}
+    
+    &:after {@extend %border_box;}
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{@extend %media_share;}
+picture{@extend %media_share;}
+video{@extend %media_share;}
+canvas{@extend %media_share;}
+svg {@extend %media_share;}
+
+input {@extend %input_share;}
+button {@extend %input_share;}
+textarea {@extend %input_share;}
+select {@extend %input_share;}
+
+p {@extend %text_wrap;}
+h1 {@extend %text_wrap;}
+h2 {@extend %text_wrap;}
+h3 {@extend %text_wrap;}
+h4 {@extend %text_wrap;}
+h5 {@extend %text_wrap;}
+h6 {@extend %text_wrap;}
+
+#root {@extend %isolate;}
+#__next {@extend %isolate;}
